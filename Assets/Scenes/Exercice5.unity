@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -753,6 +753,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   horoscopes:
+  - Monkey
   - Rooster
   - Dog
   - Pig
@@ -764,13 +765,13 @@ MonoBehaviour:
   - Snake
   - Horse
   - Goat
-  - Monkey
   inputPanel: {fileID: 1286996421}
   yearInputField: {fileID: 2035217912}
   horoscopePanel: {fileID: 1318683749}
   yourHoroscope: {fileID: 1921023055}
   animalImage: {fileID: 291089856}
   animals:
+  - {fileID: -1173052935, guid: 99f4fc72431726c408cb5b01ca2dba36, type: 3}
   - {fileID: 949360979, guid: 99f4fc72431726c408cb5b01ca2dba36, type: 3}
   - {fileID: 4311104, guid: 99f4fc72431726c408cb5b01ca2dba36, type: 3}
   - {fileID: -1308933234, guid: 99f4fc72431726c408cb5b01ca2dba36, type: 3}
@@ -782,7 +783,6 @@ MonoBehaviour:
   - {fileID: 586442709, guid: 99f4fc72431726c408cb5b01ca2dba36, type: 3}
   - {fileID: -1718325434, guid: 99f4fc72431726c408cb5b01ca2dba36, type: 3}
   - {fileID: -2074897070, guid: 99f4fc72431726c408cb5b01ca2dba36, type: 3}
-  - {fileID: -1173052935, guid: 99f4fc72431726c408cb5b01ca2dba36, type: 3}
   year: 0
   horoscopeInt: 0
 --- !u!1 &998956754

@@ -27,7 +27,7 @@ public class Exercice5_Horoscope : MonoBehaviour
     public void ConfirmButton() //When we are done introducing our birth year we hit the button confirm
     {
         year = int.Parse(yearInputField.text); //we save the number introduced in the variable year
-        horoscopeInt = year % 12; //The result of this operation is the horoscope of the person
+        horoscopeInt = year % 12; //Every year has an animal, there are 12 horoscope animals, changing every year and repeating the order every 12 years, if we do this operation with your birth year, we can know which is your animal
 
         horoscopePanel.SetActive(true);
         inputPanel.SetActive(false);
@@ -36,7 +36,7 @@ public class Exercice5_Horoscope : MonoBehaviour
         animalImage.sprite = animals[horoscopeInt];
     }
 
-    public void returnButton()
+    public void returnButton() //We turn off the panel where we saw the horoscope animal and turn on the panel to introduce our birth year
     {
         inputPanel.SetActive(true);
         horoscopePanel.SetActive(false);

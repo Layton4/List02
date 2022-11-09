@@ -8,7 +8,7 @@ public class Exercici3_Casillas : MonoBehaviour
     private int boardLimit = 300;
 
     private bool canMove = true; //boolean to detect if we can move in that moment
-    private float speed = 155f; //the speed the player will move from one square to the next
+    private float speed = 170f; //the speed the player will move from one square to the next
     private Vector3 nextPosition; //the position the player is ordered to move next
 
 
@@ -46,24 +46,17 @@ public class Exercici3_Casillas : MonoBehaviour
             }
         }
 
+
         if (nextPosition != transform.position) //if we ordered the player to move
         {
             //StartCoroutine(MovePlayer());
             Moving();
         }
-        if (nextPosition == transform.position)
+        if (nextPosition == transform.position) //Only we arrived to the next position we can move again
         {
             canMove = true;
             //StopAllCoroutines();
         }
-    }
-
-    public IEnumerator MovePlayer()
-    {
-        canMove = false;
-
-        transform.position = Vector3.MoveTowards(transform.position, nextPosition, speed * Time.deltaTime);
-        yield return new WaitForSeconds(0f);
     }
 
     public void Moving()
@@ -72,4 +65,15 @@ public class Exercici3_Casillas : MonoBehaviour
 
         transform.position = Vector3.MoveTowards(transform.position, nextPosition, speed * Time.deltaTime); //our movement
     }
+
+    /*
+    public IEnumerator MovePlayer()
+    {
+        canMove = false;
+
+        transform.position = Vector3.MoveTowards(transform.position, nextPosition, speed * Time.deltaTime);
+        yield return new WaitForSeconds(2f);
+    }
+    */
+
 }
